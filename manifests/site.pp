@@ -84,8 +84,23 @@ node default {
     ]:
   }
 
+  include chrome
+
+  include macvim
+
+  file { "/usr/local/bin":
+    ensure => directory
+  }
+  file { "/usr/local/bin/mvim":
+    ensure => link,
+    target => "/opt/boxen/homebrew/Cellar/macvim/7.4-77/bin/mvim"
+  }
+  
+
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
     target => $boxen::config::repodir
   }
+
 }
+
