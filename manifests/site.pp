@@ -63,6 +63,13 @@ node default {
     fail('Please enable full disk encryption and try again')
   }
 
+  include osx::keyboard::capslock_to_control
+	include osx::global::tap_to_click
+	include osx::dock::autohide
+	include osx::dock::clear_dock
+	include osx::universal_access::ctrl_mod_zoom
+
+
   # node versions
   # nodejs::version { 'v0.6': }
   # nodejs::version { 'v0.8': }
@@ -80,12 +87,12 @@ node default {
     [
       'ack',
       'findutils',
-      'gnu-tar'
+      'gnu-tar',
+      'tmux'
     ]:
   }
 
   include chrome
-
   include macvim
 
   file { "/usr/local/bin":
@@ -95,6 +102,21 @@ node default {
     ensure => link,
     target => "/opt/boxen/homebrew/Cellar/macvim/7.4-77/bin/mvim"
   }
+
+  $home = "/Users/${::boxen_user}"
+  $dotfiles_dir = "${home}/dotfiles"
+
+  repository { $dotfiles_dir:
+    source => "moredip/dotfiles"
+  }
+
+  exec { "install dotfiles":
+    cwd      => $dotfiles_dir,
+    command  => "./install.rb",
+    provider => shell,
+    creates  => "${home}/.vimrc",
+    require  => Repository[$dotfiles_dir]
+  }
   
 
   file { "${boxen::config::srcdir}/our-boxen":
@@ -102,5 +124,8 @@ node default {
     target => $boxen::config::repodir
   }
 
+	include onepassword
+
+	include dropbox
 }
 

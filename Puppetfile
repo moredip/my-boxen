@@ -68,3 +68,6 @@ github "xquartz",     "1.2.1"
 
 github "chrome",	"1.2.0"
 github "macvim",	"1.0.0"
+github "osx",	    "2.8.0"
+github "onepassword",	    "1.1.5"
+github "dropbox",	    "1.4.1"
