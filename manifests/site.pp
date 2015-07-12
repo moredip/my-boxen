@@ -56,7 +56,19 @@ node default {
   include dnsmasq
   include git
   include hub
-  # include nginx
+
+  git::config::global {
+		'user.name' : value => 'Pete Hodgson';
+		'user.email' : value => 'git@thepete.net';
+
+		'alias.co' : value => checkout;
+		'alias.ff' : value => 'merge --ff-only';
+		'alias.l' : value => "log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar'";
+		'alias.new' : value => "!git init $1 && cd $1 && touch .gitignore && git add .gitignore && git commit -m 'initial commit' && echo";
+
+		'color.ui' : value => 'auto';
+  }
+
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
