@@ -67,6 +67,8 @@ node default {
 		'alias.new' : value => "!git init $1 && cd $1 && touch .gitignore && git add .gitignore && git commit -m 'initial commit' && echo";
 
 		'color.ui' : value => 'auto';
+
+		'push.default' : value => 'simple';
   }
 
 
