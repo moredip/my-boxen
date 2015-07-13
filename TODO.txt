@@ -1,2 +1,4 @@
 - install fonts
 - terminal colors, close on exit
+
+- add `source ~/.bashrc` to boxen-produced `~/.profile`

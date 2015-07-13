@@ -102,6 +102,7 @@ node default {
       'ack',
       'findutils',
       'gnu-tar',
+      'bash-completion',
       'tmux',
       'reattach-to-user-namespace'
     ]:
