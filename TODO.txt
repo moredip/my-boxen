@@ -1,0 +1,2 @@
+- install fonts
+- terminal colors, close on exit
