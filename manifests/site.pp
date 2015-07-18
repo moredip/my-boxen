@@ -143,5 +143,6 @@ node default {
 	include onepassword
 	include dropbox
 	include googledrive
+	include skype
 }
 
