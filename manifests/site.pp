@@ -104,7 +104,8 @@ node default {
       'gnu-tar',
       'bash-completion',
       'tmux',
-      'reattach-to-user-namespace'
+      'reattach-to-user-namespace',
+			'heroku-toolbelt'
     ]:
   }
 
