@@ -121,6 +121,11 @@ node default {
   }
 
   $home = "/Users/${::boxen_user}"
+
+  file { "${home}/tmp":
+    ensure => directory
+  }
+
   $dotfiles_dir = "${home}/dotfiles"
 
   repository { $dotfiles_dir:
