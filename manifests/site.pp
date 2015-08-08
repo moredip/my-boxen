@@ -105,7 +105,9 @@ node default {
       'bash-completion',
       'tmux',
       'reattach-to-user-namespace',
-			'heroku-toolbelt'
+			'heroku-toolbelt',
+			'awscli',
+			's3cmd'
     ]:
   }
 
