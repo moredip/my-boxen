@@ -152,6 +152,8 @@ node default {
 	include dropbox
 	include googledrive
 	include skype
+
+	include virtualbox
 	include vagrant
 }
 
