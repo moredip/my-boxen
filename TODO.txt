@@ -1,4 +1,5 @@
 - install fonts
 - terminal colors, close on exit
+- pip/virtualenv
 
 - add `source ~/.bashrc` to boxen-produced `~/.profile`
