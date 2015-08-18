@@ -111,7 +111,8 @@ node default {
       'reattach-to-user-namespace',
 			'heroku-toolbelt',
 			'awscli',
-			's3cmd'
+			's3cmd',
+			'maven'
     ]:
   }
 
