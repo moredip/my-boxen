@@ -83,6 +83,10 @@ node default {
 	include osx::dock::clear_dock
 	include osx::universal_access::ctrl_mod_zoom
 
+	class { 'osx::dock::hot_corners':
+	  top_right => "Put Display to Sleep",
+  }
+
 
   # node versions
   # nodejs::version { 'v0.6': }
