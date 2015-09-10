@@ -63,8 +63,8 @@ node default {
 
 		'alias.co' : value => checkout;
 		'alias.ff' : value => 'merge --ff-only';
-		'alias.l' : value => "log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar'";
-		'alias.new' : value => "!git init $1 && cd $1 && touch .gitignore && git add .gitignore && git commit -m 'initial commit' && echo";
+		'alias.l' : value => 'log --graph --pretty=format\':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar\'';
+		'alias.new' : value => '!git init $1 && cd $1 && touch .gitignore && git add .gitignore && git commit -m \'initial commit\' && echo';
 
 		'color.ui' : value => 'auto';
 
