@@ -116,7 +116,8 @@ node default {
 			'heroku-toolbelt',
 			'awscli',
 			's3cmd',
-			'maven'
+			'maven',
+			'postgresql'
     ]:
   }
 
