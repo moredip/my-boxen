@@ -117,7 +117,8 @@ node default {
 			'awscli',
 			's3cmd',
 			'maven',
-			'postgresql'
+			'postgresql',
+			'tree'
     ]:
   }
 
