@@ -118,7 +118,9 @@ node default {
 			's3cmd',
 			'maven',
 			'postgresql',
-			'tree'
+			'tree',
+			'docker',
+			'docker-machine'
     ]:
   }
 
