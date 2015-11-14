@@ -120,7 +120,8 @@ node default {
 			'postgresql',
 			'tree',
 			'docker',
-			'docker-machine'
+			'docker-machine',
+			'ansible'
     ]:
   }
 
