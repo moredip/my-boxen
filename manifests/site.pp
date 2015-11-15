@@ -104,6 +104,7 @@ node default {
   # ruby::version { '2.1.1': }
   ruby::version { '2.1.2': }
 
+
   # common, useful packages
   package {
     [
@@ -124,6 +125,9 @@ node default {
 			'ansible'
     ]:
   }
+
+	include brewcask
+	package { 'spectacle': provider => 'brewcask' } 
 
   include chrome
   include macvim
