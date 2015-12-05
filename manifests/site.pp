@@ -88,10 +88,10 @@ node default {
   }
 
 
-  nodejs::version { 'v0.12.7': }
-  nodejs::module { 'gulp':
-	  node_version => 'v0.12.7'
-  }
+  #nodejs::version { 'v0.12.7': }
+  #npm_module { 'gulp':
+  #        node_version => 'v0.12.7'
+  #}
 
   ruby::version { '2.2.3': }
 
@@ -115,6 +115,8 @@ node default {
 			'ansible'
     ]:
   }
+
+	include java
 
 	include brewcask
 	package { 'spectacle': provider => 'brewcask' } 

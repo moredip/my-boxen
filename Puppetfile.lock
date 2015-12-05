@@ -59,6 +59,11 @@ GITHUBTARBALL
     hub (1.4.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-java
+  specs:
+    java (1.8.4)
+
+GITHUBTARBALL
   remote: boxen/puppet-macvim
   specs:
     macvim (1.0.0)
@@ -71,7 +76,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (5.0.0)
+    nodejs (5.0.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-onepassword
@@ -162,10 +167,11 @@ DEPENDENCIES
   homebrew (= 1.13.0)
   hub (= 1.4.1)
   inifile (= 1.4.1)
+  java (= 1.8.4)
   macvim (= 1.0.0)
   module_data (= 0.0.4)
   nginx (= 1.6.0)
-  nodejs (= 5.0.0)
+  nodejs (= 5.0.5)
   onepassword (= 1.1.5)
   openssl (= 1.0.0)
   osx (= 2.8.0)
