@@ -120,6 +120,7 @@ node default {
 
 	include brewcask
 	package { 'spectacle': provider => 'brewcask' } 
+	package { 'dropbox': provider => 'brewcask' } 
 
   include chrome
   include macvim
@@ -159,7 +160,6 @@ node default {
   }
 
 	include onepassword
-	include dropbox
 	include googledrive
 	include skype
 
