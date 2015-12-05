@@ -88,10 +88,7 @@ node default {
   }
 
 
-  #nodejs::version { 'v0.12.7': }
-  #npm_module { 'gulp':
-  #        node_version => 'v0.12.7'
-  #}
+  nodejs::version { '0.12.7': }
 
   ruby::version { '2.2.3': }
 
