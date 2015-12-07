@@ -119,6 +119,7 @@ node default {
 	package { 'spectacle': provider => 'brewcask' } 
 	package { 'dropbox': provider => 'brewcask' } 
 	package { 'skype': provider => 'brewcask' } 
+	package { 'vlc': provider => 'brewcask' } 
 
   include chrome
   include macvim
