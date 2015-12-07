@@ -118,6 +118,7 @@ node default {
 	include brewcask
 	package { 'spectacle': provider => 'brewcask' } 
 	package { 'dropbox': provider => 'brewcask' } 
+	package { 'skype': provider => 'brewcask' } 
 
   include chrome
   include macvim
@@ -158,7 +159,6 @@ node default {
 
 	include onepassword
 	include googledrive
-	include skype
 
 	include virtualbox
 	include vagrant
