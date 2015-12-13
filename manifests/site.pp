@@ -107,19 +107,20 @@ node default {
 			'maven',
 			'postgresql',
 			'tree',
+			'pstree',
 			'docker',
 			'docker-machine',
 			'ansible'
     ]:
   }
 
-	include java
-
 	include brewcask
 	package { 'spectacle': provider => 'brewcask' } 
 	package { 'dropbox': provider => 'brewcask' } 
 	package { 'skype': provider => 'brewcask' } 
 	package { 'vlc': provider => 'brewcask' } 
+	package { 'google-cloud-sdk': provider => 'brewcask' } 
+	package { 'java': provider => 'brewcask' } 
 
   include chrome
   include macvim
