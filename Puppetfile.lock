@@ -54,11 +54,6 @@ GITHUBTARBALL
     hub (1.4.1)
 
 GITHUBTARBALL
-  remote: boxen/puppet-java
-  specs:
-    java (1.8.4)
-
-GITHUBTARBALL
   remote: boxen/puppet-macvim
   specs:
     macvim (1.0.0)
@@ -156,7 +151,6 @@ DEPENDENCIES
   homebrew (= 1.13.0)
   hub (= 1.4.1)
   inifile (= 1.4.1)
-  java (= 1.8.4)
   macvim (= 1.0.0)
   module_data (= 0.0.4)
   nginx (= 1.6.0)
