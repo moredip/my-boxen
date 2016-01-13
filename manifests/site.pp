@@ -121,6 +121,7 @@ node default {
 	package { 'vlc': provider => 'brewcask' } 
 	package { 'google-cloud-sdk': provider => 'brewcask' } 
 	package { 'java': provider => 'brewcask' } 
+	package { 'omnigraffle': provider => 'brewcask' } 
 
   include chrome
   include macvim
