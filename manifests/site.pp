@@ -110,7 +110,8 @@ node default {
 			'pstree',
 			'docker',
 			'docker-machine',
-			'ansible'
+			'ansible',
+			'graphviz'
     ]:
   }
 
