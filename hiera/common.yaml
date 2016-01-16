@@ -1,3 +1,6 @@
 ---
 virtualbox::version: "5.0.0"
 virtualbox::patch_level: "101573"
+
+nodejs::nodenv::ensure: "v1.0.0"
+nodejs::build::ensure: "v2.1.1"

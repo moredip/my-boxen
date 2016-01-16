@@ -88,7 +88,9 @@ node default {
   }
 
 
-  nodejs::version { '0.12.7': }
+	class { 'nodejs::global':
+    version => '5.4.0'
+  }
 
   ruby::version { '2.2.3': }
 
