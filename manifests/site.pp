@@ -113,7 +113,8 @@ node default {
 			'docker',
 			'docker-machine',
 			'ansible',
-			'graphviz'
+			'graphviz',
+			'openssl'
     ]:
   }
 
