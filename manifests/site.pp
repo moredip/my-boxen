@@ -120,6 +120,7 @@ node default {
   }
 
 	include brewcask
+	package { 'vagrant': provider => 'brewcask' } 
 	package { 'spectacle': provider => 'brewcask' } 
 	package { 'dropbox': provider => 'brewcask' } 
 	package { 'skype': provider => 'brewcask' } 
@@ -169,6 +170,5 @@ node default {
 	include googledrive
 
 	include virtualbox
-	include vagrant
 }
 
