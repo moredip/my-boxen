@@ -1,18 +1,8 @@
-# Our Boxen
-
-This is a template Boxen project designed for your organization to fork and
-modify appropriately.
-The Boxen rubygem and the Boxen puppet modules are only a framework for getting
-things done.
-This repository template is just a basic example of _how_ to do things with them.
+# Pete's Boxen
 
 ## Getting Started
 
-To give you a brief overview, we're going to:
-
 * Install dependencies (basically Xcode)
-* Bootstrap a boxen for your self/team/org/company
-* Then convert your local copy of that boxen to the post-bootstrapped version
 
 There are a few potential conflicts to keep in mind.
 Boxen does its best not to get in the way of a dirty system,
@@ -35,57 +25,14 @@ and detect most of these and tell you anyway):
 This will grant you the most predictable behavior in building apps like
 MacVim.
 
-How do you do it?
+You can download an XCode .dmg directly from https://developer.apple.com/downloads/. 
 
-#### OS X 10.9 (Mavericks)
+**Avoid installing XCode via the App Store if possible.**
 
-If you are using [`b26abd0` of boxen-web](https://github.com/boxen/boxen-web/commit/b26abd0d681129eba0b5f46ed43110d873d8fdc2)
-or newer, it will be automatically installed as part of Boxen.
-Otherwise, follow instructions below.
-
-#### OS X < 10.9
-
-1. Install Xcode from the Mac App Store.
-1. Open Xcode.
-1. Open the Preferences window (`Cmd-,`).
-1. Go to the Downloads tab.
-1. Install the Command Line Tools.
-
-### Bootstrapping
-
-Create a **new** git repository somewhere on the internet.
-It can be private or public -- it really doesn't matter.
-If you're making a repository on GitHub, you _may not_ want to fork this repo
-to get started.
-The reason for that is that you can't really make private forks of public
-repositories easily.
-
-Once you've done that, you can run the following to bootstrap
-your boxen:
-
-```
-sudo mkdir -p /opt/boxen
-sudo chown ${USER}:staff /opt/boxen
-git clone https://github.com/boxen/our-boxen /opt/boxen/repo
-cd /opt/boxen/repo
-git remote rm origin
-git remote add origin <the location of my new git repository>
-git push -u origin master
-```
-
-Now that your boxen is bootstrapped, you can run the following to
-install the default configuration from this repo:
-
-```
-cd /opt/boxen/repo
-./script/boxen
-```
 
 ### Distributing
 
-That's enough to get your boxen into a usable state on other machines,
-usually.
-From there, we recommend setting up
+We recommend setting up
 [boxen-web](https://github.com/boxen/boxen-web)
 as an easy way to automate letting other folks install your boxen.
 
