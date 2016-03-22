@@ -29,6 +29,8 @@ You can download an XCode .dmg directly from https://developer.apple.com/downloa
 
 **Avoid installing XCode via the App Store if possible.**
 
+After installing XCode, run `xcode-select --install` to install the command line tools.
+
 
 ### Distributing
 
