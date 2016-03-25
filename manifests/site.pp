@@ -112,10 +112,12 @@ node default {
 			'pstree',
 			'docker',
 			'docker-machine',
+			'docker-compose',
 			'ansible',
 			'graphviz',
 			'openssl',
-			'keybase'
+			'keybase',
+			'vault'
     ]:
   }
 
