@@ -110,6 +110,7 @@ node default {
 			'postgresql',
 			'tree',
 			'pstree',
+			'jq',
 			'docker',
 			'docker-machine',
 			'docker-compose',
