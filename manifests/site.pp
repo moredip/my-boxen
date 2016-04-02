@@ -122,6 +122,14 @@ node default {
     ]:
   }
 
+	# trigger a `brew link --force openssl` after it's installed
+	# based on: https://github.com/boxen/our-boxen/issues/453
+  exec { 'brew link --force openssl':
+    provider => shell,
+    require  => Package[openssl],
+  	refreshonly => 'true',
+  }
+
 	include brewcask
 	package { 'vagrant': provider => 'brewcask' } 
 	package { 'spectacle': provider => 'brewcask' } 
