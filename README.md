@@ -45,6 +45,7 @@ sudo mkdir -p /opt/boxen
 sudo chown ${USER}:staff /opt/boxen
 git clone https://github.com/moredip/my-boxen.git /opt/boxen/repo
 cd /opt/boxen/repo
+bundle install # ugh, shame this appears to be necessary
 ./script/boxen
 ```
 
