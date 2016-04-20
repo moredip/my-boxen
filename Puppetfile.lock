@@ -46,7 +46,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.13.0)
+    homebrew (2.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
@@ -101,7 +101,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (8.5.3)
+    ruby (8.5.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-sudo
@@ -143,7 +143,7 @@ DEPENDENCIES
   git (= 2.7.92)
   go (= 2.1.0)
   googledrive (= 1.0.2)
-  homebrew (= 1.13.0)
+  homebrew (= 2.0.2)
   hub (= 1.4.1)
   inifile (= 1.4.1)
   macvim (= 1.0.0)
@@ -156,7 +156,7 @@ DEPENDENCIES
   phantomjs (= 3.0.0)
   pkgconfig (= 1.0.0)
   repository (= 2.4.1)
-  ruby (= 8.5.3)
+  ruby (= 8.5.4)
   stdlib (= 4.7.0)
   sudo (= 1.0.0)
   virtualbox (= 1.0.13)
